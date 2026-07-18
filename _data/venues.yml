@@ -1,0 +1,19 @@
+"TMC":
+  url: https://www.computer.org/csdl/journal/tm
+  color: "#315d99"
+
+"INFOCOM":
+  url: https://infocom2026.ieee-infocom.org/
+  color: "#315d99"
+
+"SenSys":
+  url: https://sensys.acm.org/
+  color: "#315d99"
+
+"ToN":
+  url: https://www.computer.org/csdl/journal/nw
+  color: "#315d99"
+
+"IWQoS":
+  url: https://iwqos2025.ieee-iwqos.org/
+  color: "#315d99"

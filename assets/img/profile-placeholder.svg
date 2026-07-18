@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 960" role="img" aria-labelledby="title desc">
+  <title id="title">CF profile placeholder</title>
+  <desc id="desc">A navy editorial monogram placeholder to replace with a profile photograph.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef3fa"/>
+      <stop offset="1" stop-color="#d9e4f3"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="72%" cy="18%" r="62%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#315d99" stroke-opacity=".075" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="960" rx="28" fill="url(#bg)"/>
+  <rect width="800" height="960" rx="28" fill="url(#glow)"/>
+  <rect x="34" y="34" width="732" height="892" rx="22" fill="url(#grid)"/>
+  <circle cx="400" cy="448" r="202" fill="#ffffff" fill-opacity=".68" stroke="#315d99" stroke-opacity=".16" stroke-width="2"/>
+  <text x="400" y="512" text-anchor="middle" fill="#214a7b" font-family="Inter, Arial, sans-serif" font-size="172" font-weight="600" letter-spacing="-12">CF</text>
+  <path d="M212 748H588" stroke="#315d99" stroke-opacity=".25" stroke-width="2"/>
+  <text x="400" y="800" text-anchor="middle" fill="#315d99" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="500" letter-spacing="4">REPLACE WITH YOUR PHOTO</text>
+</svg>

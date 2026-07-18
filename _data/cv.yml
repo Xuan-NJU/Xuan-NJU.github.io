@@ -1,0 +1,50 @@
+# Structured CV content. Replace every value marked EDIT before publishing.
+cv:
+  name: Chengxuan Fu
+  label: "[Current position]" # EDIT
+  email: "" # EDIT
+  location: "[City, Country]" # EDIT
+  image: ""
+  summary: >-
+    Add a concise two- or three-sentence academic summary here. Mention your research focus,
+    current appointment, and the kind of problems you work on.
+
+  social_networks:
+    - network: GitHub
+      username: Xuan-NJU
+
+  sections:
+    Education:
+      - institution: "[Institution]" # EDIT
+        location: "[City, Country]" # EDIT
+        area: "[Your degree program]" # EDIT
+        studyType: "[Degree]" # EDIT
+        start_date: "[YYYY-MM]" # EDIT
+        end_date: "[YYYY-MM or present]" # EDIT
+        highlights:
+          - "Advisor: [Name]" # EDIT
+          - "Research group: [Group / Lab]" # EDIT
+
+    Research Experience:
+      - company: "[Laboratory or institution]" # EDIT
+        position: "[Research role]" # EDIT
+        location: "[City, Country]" # EDIT
+        start_date: "[YYYY-MM]" # EDIT
+        end_date: present
+        summary: "Describe your research responsibilities and contributions." # EDIT
+
+    Honors and Awards:
+      - title: "[Award or scholarship]" # EDIT
+        date: "[YYYY]" # EDIT
+        awarder: "[Awarding organization]" # EDIT
+
+    Academic Service:
+      - name: "[Reviewer, volunteer, or professional service]" # EDIT
+        date: "[YYYY]" # EDIT
+        issuer: "[Venue or organization]" # EDIT
+
+    Skills:
+      - name: Research
+        level: ""
+        icon: fa-solid fa-hashtag
+        keywords: "RFID Systems, Wireless Sensing, Mobile Computing, Internet of Things" # EDIT

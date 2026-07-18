@@ -1,0 +1,23 @@
+---
+---
+@charset "utf-8";
+
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default: "1060px" }}
+);
+
+@use "themes";
+@use "layout";
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+// Site-specific editorial layer. This is the only intentional theme style override.
+@use "academic";
