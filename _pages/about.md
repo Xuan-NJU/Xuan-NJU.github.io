@@ -2,6 +2,9 @@
 layout: about
 title: about
 permalink: /
+lang: en
+nav_section: about
+translation: /zh/
 subtitle: "[Position] · [Institution]" # EDIT: position · lab · institution
 description: Academic profile, research interests, news, and selected publications.
 

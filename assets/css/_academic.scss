@@ -117,6 +117,22 @@ input:focus-visible {
   background: var(--global-theme-color);
 }
 
+.navbar .nav-language-link {
+  padding-right: 0.66rem !important;
+  padding-left: 0.66rem !important;
+  color: var(--global-theme-color);
+  font-size: 0.78rem;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+  background: var(--academic-accent-soft);
+  border: 1px solid color-mix(in srgb, var(--global-theme-color) 16%, transparent);
+  border-radius: 999px;
+}
+
+.navbar .nav-language-link:hover {
+  background: color-mix(in srgb, var(--global-theme-color) 14%, transparent);
+}
+
 .post {
   margin-top: 2.8rem;
 }
@@ -369,6 +385,20 @@ input:focus-visible {
   font-weight: 650;
   line-height: 1.45;
   letter-spacing: -0.018em;
+}
+
+.publications .publication-original-title {
+  display: block;
+  margin-top: 0.18rem;
+  color: var(--global-text-color-light);
+  font-size: 0.82rem;
+  font-weight: 450;
+  line-height: 1.45;
+  letter-spacing: 0;
+}
+
+.publications .publication-note {
+  margin-top: 0.18rem;
 }
 
 .publications .author,

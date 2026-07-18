@@ -3,6 +3,9 @@ layout: page
 title: news
 permalink: /news/
 description: Research and publication updates.
+lang: en
+nav_section: news
+translation: /zh/news/
 nav: true
 nav_order: 3
 ---

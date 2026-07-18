@@ -1,0 +1,7 @@
+<div class="publications">
+  {% if page.lang contains 'zh' %}
+    {% bibliography --group_by none --query @*[selected=true]* --template bib_zh %}
+  {% else %}
+    {% bibliography --group_by none --query @*[selected=true]* %}
+  {% endif %}
+</div>

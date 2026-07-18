@@ -15,21 +15,18 @@
 头像推荐使用竖版 JPG/WebP，至少 800×960，文件小于 500 KB。删除或替换
 `assets/img/profile-placeholder.svg` 即可。
 
-## 2. 社交与学术链接
+## 2. 中文页面
+
+中文镜像由 `_pages/about_zh.md`、`_pages/publications_zh.md` 和
+`_pages/news_zh.md` 组成。个人资料应与英文页同步填写；论文中文译名统一保存在
+`_data/publications_zh.yml`，不要修改 `_bibliography/papers.bib` 中的官方英文题名。
+
+每条动态的中文翻译保存在对应 `_news/*.md` 文件的 `content_zh` 字段中。
+
+## 3. 社交与学术链接
 
 打开 `_data/socials.yml`。GitHub、ORCID 和 Semantic Scholar 已填入；补充邮箱、
 Google Scholar 或 LinkedIn 时，取消对应行的注释并填写值。
-
-## 3. CV
-
-打开 `_data/cv.yml`，替换所有 `EDIT` 或方括号占位内容。新增经历时复制相邻条目，
-保持 YAML 缩进一致。
-
-如果需要提供 PDF 下载：
-
-1. 将文件命名为 `cv.pdf`，放入 `assets/pdf/`。
-2. 在 `_pages/about.md` 的 `profile.more_info` 中添加 CV 链接。
-3. 在 `_data/socials.yml` 取消 `cv_pdf` 一行的注释。
 
 ## 4. Publications
 

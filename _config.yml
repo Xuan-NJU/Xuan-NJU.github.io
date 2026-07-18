@@ -8,7 +8,7 @@ middle_name:
 last_name: Fu # EDIT: family name
 contact_note: # EDIT: optional one-line contact note
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Academic homepage of Chengxuan Fu. Research publications, curriculum vitae, and recent news.
+  Bilingual academic homepage of Chengxuan Fu, featuring research publications and recent news.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -58,7 +58,7 @@ al_folio:
     allow_remote_loader: true
   features:
     cv:
-      enabled: true
+      enabled: false
     distill:
       enabled: false
   compat:
