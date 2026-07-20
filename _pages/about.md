@@ -13,10 +13,9 @@ profile:
   image: profile-placeholder.svg # EDIT: replace with your own file in assets/img/
   image_circular: false
   more_info: >
-    <p>[Laboratory / Department]</p>
-    <p>[Institution]</p>
-    <p>[City, Country]</p>
-    <p>[your-email@example.com]</p>
+    <p>Nanjing University</p>
+    <p>Nanjing, China</p>
+    <p>chengxuan@smail.nju.edu.cn</p>
 
 selected_papers: true
 social: true
@@ -30,9 +29,7 @@ latest_posts:
   enabled: false
 ---
 
-I am a [position] at [institution], advised by [advisor]. Replace this paragraph with a concise introduction covering your current role and academic background.
-
-My research focuses on RFID systems, wireless sensing, and mobile computing. Replace or expand this sentence to describe your research agenda and long-term goals.
+I am a second-year Ph.D. candidate at Nanjing University, supervised by Assoc. Prof. Jia Liu. My research focuses on wireless sensing, and RFID systems.
 
 <div class="research-interests" aria-label="Research interests">
   <p class="micro-heading">Research interests</p>
