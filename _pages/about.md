@@ -35,9 +35,8 @@ My research interests include Wireless Sensing, Mobile Computing and RFID system
 <div class="research-interests" aria-label="Research interests">
   <p class="micro-heading">Research interests</p>
   <ul class="interest-list">
-    <li>RFID Systems</li>
     <li>Wireless Sensing</li>
     <li>Mobile Computing</li>
-    <li>Internet of Things</li>
+    <li>RFID Systems</li>
   </ul>
 </div>
