@@ -4,7 +4,7 @@ title: Events
 permalink: /events/
 lang: en
 nav_section: events
-nav: true
+nav: false
 nav_order: 3
 ---
 

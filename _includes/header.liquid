@@ -30,22 +30,28 @@
       </button>
 
       <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav">
+        {% assign publications_nav_page = site.pages | where: 'nav_section', 'publications' | first %}
+        {% assign events_nav_page = site.pages | where: 'nav_section', 'events' | first %}
         <ul class="navbar-nav navbar-menu-list flex-nowrap">
           <li class="nav-item {% if page.nav_section == 'about' or page.permalink == '/' %}active{% endif %}">
             <a class="nav-link" href="{{ '/' | relative_url }}">
               Home{% if page.nav_section == 'about' or page.permalink == '/' %}<span class="sr-only">(current)</span>{% endif %}
             </a>
           </li>
-          <li class="nav-item {% if page.nav_section == 'publications' %}active{% endif %}">
-            <a class="nav-link" href="{{ '/publications/' | relative_url }}">
-              Publications{% if page.nav_section == 'publications' %}<span class="sr-only">(current)</span>{% endif %}
-            </a>
-          </li>
-          <li class="nav-item {% if page.nav_section == 'events' %}active{% endif %}">
-            <a class="nav-link" href="{{ '/events/' | relative_url }}">
-              Events{% if page.nav_section == 'events' %}<span class="sr-only">(current)</span>{% endif %}
-            </a>
-          </li>
+          {% if publications_nav_page.nav %}
+            <li class="nav-item {% if page.nav_section == 'publications' %}active{% endif %}">
+              <a class="nav-link" href="{{ publications_nav_page.url | relative_url }}">
+                Publications{% if page.nav_section == 'publications' %}<span class="sr-only">(current)</span>{% endif %}
+              </a>
+            </li>
+          {% endif %}
+          {% if events_nav_page.nav %}
+            <li class="nav-item {% if page.nav_section == 'events' %}active{% endif %}">
+              <a class="nav-link" href="{{ events_nav_page.url | relative_url }}">
+                Events{% if page.nav_section == 'events' %}<span class="sr-only">(current)</span>{% endif %}
+              </a>
+            </li>
+          {% endif %}
 
           {% if site.search_enabled %}
             <li class="nav-item">

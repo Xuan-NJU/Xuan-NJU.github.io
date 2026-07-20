@@ -4,7 +4,7 @@ permalink: /publications/
 title: Publications
 lang: en
 nav_section: publications
-nav: true
+nav: false
 nav_order: 2
 ---
 
