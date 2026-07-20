@@ -1,14 +1,8 @@
-{% assign current_lang = page.lang | default: site.lang %}
-{% assign is_zh = false %}
-{% if current_lang contains 'zh' %}
-  {% assign is_zh = true %}
-{% endif %}
-
 <header>
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
       {% if page.permalink != '/' %}
-        <a class="navbar-brand title font-weight-lighter" href="{% if is_zh %}{{ '/zh/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">
+        <a class="navbar-brand title font-weight-lighter" href="{{ '/' | relative_url }}">
           {% if site.title == 'blank' %}
             {% if site.first_name %}<span class="font-weight-bold">{{ site.first_name }}</span>{% endif %}
             {% if site.middle_name %} {{ site.middle_name }}{% endif %}
@@ -27,9 +21,9 @@
         data-nav-toggle="navbarNav"
         aria-controls="navbarNav"
         aria-expanded="false"
-        aria-label="{% if is_zh %}展开导航{% else %}Toggle navigation{% endif %}"
+        aria-label="Toggle navigation"
       >
-        <span class="sr-only">{% if is_zh %}展开导航{% else %}Toggle navigation{% endif %}</span>
+        <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar top-bar"></span>
         <span class="icon-bar middle-bar"></span>
         <span class="icon-bar bottom-bar"></span>
@@ -37,61 +31,25 @@
 
       <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav">
         <ul class="navbar-nav navbar-menu-list flex-nowrap">
-          {% if is_zh %}
-            <li class="nav-item {% if page.nav_section == 'about' %}active{% endif %}">
-              <a class="nav-link" href="{{ '/zh/' | relative_url }}">
-                首页{% if page.nav_section == 'about' %}<span class="sr-only">（当前页面）</span>{% endif %}
-              </a>
-            </li>
-            <li class="nav-item {% if page.nav_section == 'publications' %}active{% endif %}">
-              <a class="nav-link" href="{{ '/zh/publications/' | relative_url }}">
-                论文与出版物{% if page.nav_section == 'publications' %}<span class="sr-only">（当前页面）</span>{% endif %}
-              </a>
-            </li>
-            <li class="nav-item {% if page.nav_section == 'events' %}active{% endif %}">
-              <a class="nav-link" href="{{ '/zh/events/' | relative_url }}">
-                动态{% if page.nav_section == 'events' %}<span class="sr-only">（当前页面）</span>{% endif %}
-              </a>
-            </li>
-          {% else %}
-            <li class="nav-item {% if page.nav_section == 'about' or page.permalink == '/' %}active{% endif %}">
-              <a class="nav-link" href="{{ '/' | relative_url }}">
-                Home{% if page.nav_section == 'about' or page.permalink == '/' %}<span class="sr-only">(current)</span>{% endif %}
-              </a>
-            </li>
-            <li class="nav-item {% if page.nav_section == 'publications' %}active{% endif %}">
-              <a class="nav-link" href="{{ '/publications/' | relative_url }}">
-                Publications{% if page.nav_section == 'publications' %}<span class="sr-only">(current)</span>{% endif %}
-              </a>
-            </li>
-            <li class="nav-item {% if page.nav_section == 'events' %}active{% endif %}">
-              <a class="nav-link" href="{{ '/events/' | relative_url }}">
-                Events{% if page.nav_section == 'events' %}<span class="sr-only">(current)</span>{% endif %}
-              </a>
-            </li>
-          {% endif %}
-
-          {% if page.translation %}
-            {% assign language_url = page.translation %}
-          {% elsif is_zh %}
-            {% assign language_url = '/' %}
-          {% else %}
-            {% assign language_url = '/zh/' %}
-          {% endif %}
-          <li class="nav-item nav-language-item">
-            <a
-              class="nav-link nav-language-link"
-              href="{{ language_url | relative_url }}"
-              hreflang="{% if is_zh %}en{% else %}zh-CN{% endif %}"
-              lang="{% if is_zh %}en{% else %}zh-CN{% endif %}"
-            >
-              {% if is_zh %}EN{% else %}中文{% endif %}
+          <li class="nav-item {% if page.nav_section == 'about' or page.permalink == '/' %}active{% endif %}">
+            <a class="nav-link" href="{{ '/' | relative_url }}">
+              Home{% if page.nav_section == 'about' or page.permalink == '/' %}<span class="sr-only">(current)</span>{% endif %}
+            </a>
+          </li>
+          <li class="nav-item {% if page.nav_section == 'publications' %}active{% endif %}">
+            <a class="nav-link" href="{{ '/publications/' | relative_url }}">
+              Publications{% if page.nav_section == 'publications' %}<span class="sr-only">(current)</span>{% endif %}
+            </a>
+          </li>
+          <li class="nav-item {% if page.nav_section == 'events' %}active{% endif %}">
+            <a class="nav-link" href="{{ '/events/' | relative_url }}">
+              Events{% if page.nav_section == 'events' %}<span class="sr-only">(current)</span>{% endif %}
             </a>
           </li>
 
           {% if site.search_enabled %}
             <li class="nav-item">
-              <button id="search-toggle" type="button" title="{% if is_zh %}搜索{% else %}Search{% endif %}" aria-label="{% if is_zh %}打开搜索{% else %}Open search{% endif %}">
+              <button id="search-toggle" type="button" title="Search" aria-label="Open search">
                 <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span>
               </button>
             </li>
@@ -101,8 +59,8 @@
               <button
                 id="light-toggle"
                 type="button"
-                title="{% if is_zh %}切换配色（跟随系统 / 日间 / 夜间）{% else %}Change theme (system / light / dark){% endif %}"
-                aria-label="{% if is_zh %}切换配色主题：跟随系统、日间或夜间{% else %}Change color theme: system, light, or dark{% endif %}"
+                title="Change theme (system / light / dark)"
+                aria-label="Change color theme: system, light, or dark"
               >
                 <i class="fa-half-sun-moon" id="light-toggle-system"></i>
                 <i class="fa-solid fa-moon" id="light-toggle-dark"></i>

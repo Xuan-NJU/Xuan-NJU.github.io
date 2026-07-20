@@ -13,14 +13,6 @@
       <meta http-equiv="refresh" content="3; url={{ redirect }}">
     {% endif %}
     {% include head.liquid %}
-    {% if page.translation %}
-      <link rel="alternate" hreflang="{{ page_lang }}" href="{{ page.url | absolute_url }}">
-      <link
-        rel="alternate"
-        hreflang="{% if page_lang contains 'zh' %}en{% else %}zh-CN{% endif %}"
-        href="{{ page.translation | absolute_url }}"
-      >
-    {% endif %}
   </head>
 
   <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">

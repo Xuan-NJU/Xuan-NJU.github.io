@@ -8,7 +8,7 @@ middle_name:
 last_name: Fu # EDIT: family name
 contact_note: # EDIT: optional one-line contact note
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Bilingual academic homepage of Chengxuan Fu, featuring research publications and recent events.
+  Academic homepage of Chengxuan Fu, featuring research publications and recent events.
 footer_text:
 keywords: Chengxuan Fu, RFID, wireless sensing, mobile computing, academic homepage
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
@@ -508,7 +508,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      fonts: "https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
   highlightjs:
     integrity:
       css:

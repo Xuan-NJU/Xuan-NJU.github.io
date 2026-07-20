@@ -5,7 +5,6 @@ permalink: /events/
 description: Research and publication events.
 lang: en
 nav_section: events
-translation: /zh/events/
 nav: true
 nav_order: 3
 ---

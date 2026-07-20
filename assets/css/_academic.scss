@@ -47,15 +47,10 @@ body {
     "Crimson Pro",
     Georgia,
     "Times New Roman",
-    "Noto Serif SC",
-    "Source Han Serif SC",
-    "Songti SC",
-    STSong,
-    SimSun,
     serif;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
-  line-height: 1.55;
+  line-height: 1.6;
   letter-spacing: normal;
   text-rendering: optimizeLegibility;
 }
@@ -90,8 +85,6 @@ input:focus-visible {
   min-height: 62px;
   font-family:
     "Segoe UI",
-    "PingFang SC",
-    "Microsoft YaHei",
     Arial,
     sans-serif;
   background: color-mix(in srgb, var(--global-bg-color) 82%, transparent);
@@ -103,7 +96,7 @@ input:focus-visible {
 
 .navbar .navbar-brand,
 .navbar .nav-link {
-  font-size: 0.91rem;
+  font-size: 0.98rem;
   letter-spacing: normal;
 }
 
@@ -129,22 +122,6 @@ input:focus-visible {
   height: 1px;
   content: "";
   background: var(--global-theme-color);
-}
-
-.navbar .nav-language-link {
-  padding-right: 0.66rem !important;
-  padding-left: 0.66rem !important;
-  color: var(--global-theme-color);
-  font-size: 0.78rem;
-  font-weight: 650;
-  letter-spacing: 0.04em;
-  background: var(--academic-accent-soft);
-  border: 1px solid color-mix(in srgb, var(--global-theme-color) 16%, transparent);
-  border-radius: 999px;
-}
-
-.navbar .nav-language-link:hover {
-  background: color-mix(in srgb, var(--global-theme-color) 14%, transparent);
 }
 
 .post {
@@ -176,7 +153,7 @@ input:focus-visible {
   max-width: 760px;
   margin-top: 0.75rem;
   color: var(--global-text-color-light);
-  font-size: clamp(1rem, 2vw, 1.12rem);
+  font-size: clamp(1.1rem, 2vw, 1.24rem);
   line-height: 1.55;
 }
 
@@ -184,7 +161,7 @@ input:focus-visible {
 .micro-heading {
   margin-bottom: 0.65rem;
   color: var(--global-theme-color);
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.13em;
   text-transform: uppercase;
@@ -246,8 +223,8 @@ input:focus-visible {
   display: block;
   margin: 0.14rem 0;
   color: var(--global-text-color-light);
-  font-size: 0.88rem;
-  line-height: 1.45;
+  font-size: 0.96rem;
+  line-height: 1.5;
 }
 
 .about-intro {
@@ -258,7 +235,8 @@ input:focus-visible {
 
 .about-intro > p {
   margin-bottom: 1rem;
-  font-size: 1.04rem;
+  font-size: 1.14rem;
+  line-height: 1.62;
 }
 
 .research-interests {
@@ -277,7 +255,7 @@ input:focus-visible {
 .interest-list li {
   padding: 0.38rem 0.72rem;
   color: var(--global-theme-color);
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   font-weight: 500;
   background: var(--academic-accent-soft);
   border: 1px solid color-mix(in srgb, var(--global-theme-color) 16%, transparent);
@@ -292,7 +270,7 @@ input:focus-visible {
   padding-bottom: 0.85rem;
   margin-top: 4.25rem;
   margin-bottom: 0.8rem;
-  font-size: clamp(1.55rem, 3vw, 2.05rem);
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
   font-weight: 500;
   letter-spacing: normal;
   border-bottom: 1px solid var(--global-divider-color);
@@ -324,7 +302,7 @@ input:focus-visible {
 .section-heading-row h2 {
   padding: 0;
   margin: 0;
-  font-size: clamp(1.55rem, 3vw, 2.05rem);
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
   font-weight: 500;
   letter-spacing: normal;
 }
@@ -336,7 +314,7 @@ input:focus-visible {
 
 .section-link {
   color: var(--global-text-color-light);
-  font-size: 0.78rem;
+  font-size: 0.84rem;
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
@@ -353,7 +331,8 @@ input:focus-visible {
   margin-top: -0.7rem;
   margin-bottom: 2.4rem;
   color: var(--global-text-color-light);
-  font-size: 1rem;
+  font-size: 1.08rem;
+  line-height: 1.6;
 }
 
 .news .table-responsive {
@@ -416,7 +395,7 @@ input:focus-visible {
 .news table th {
   width: 154px !important;
   color: var(--global-text-color-light);
-  font-size: 0.77rem;
+  font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: 0.025em;
   text-transform: uppercase;
@@ -424,8 +403,8 @@ input:focus-visible {
 
 .news table td {
   color: var(--global-text-color);
-  font-size: 0.94rem;
-  line-height: 1.55;
+  font-size: 1.04rem;
+  line-height: 1.58;
 }
 
 .news table td strong {
@@ -440,7 +419,7 @@ input:focus-visible {
   padding-top: 1.2rem;
   margin-top: 3rem;
   color: var(--global-text-color-light);
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   font-weight: 600;
   text-align: left;
   letter-spacing: 0.06em;
@@ -459,38 +438,24 @@ input:focus-visible {
 
 .publications .title {
   margin-bottom: 0.24rem;
-  font-size: 1.08rem;
+  font-size: 1.2rem;
   font-weight: 650;
   line-height: 1.45;
   letter-spacing: normal;
 }
 
-.publications .publication-original-title {
-  display: block;
-  margin-top: 0.18rem;
-  color: var(--global-text-color-light);
-  font-size: 0.82rem;
-  font-weight: 450;
-  line-height: 1.45;
-  letter-spacing: 0;
-}
-
-.publications .publication-note {
-  margin-top: 0.18rem;
-}
-
 .publications .author,
 .publications .periodical {
   color: var(--global-text-color-light);
-  font-size: 0.9rem;
-  line-height: 1.55;
+  font-size: 0.98rem;
+  line-height: 1.58;
 }
 
 .publications .abbr abbr {
   min-width: 4.7rem;
   padding: 0.38rem 0.65rem;
   color: var(--global-theme-color);
-  font-size: 0.71rem;
+  font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.035em;
   background: var(--academic-accent-soft);
@@ -516,7 +481,7 @@ input:focus-visible {
   padding: 0.25rem 0.68rem;
   margin: 0 !important;
   color: var(--global-text-color-light);
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   font-weight: 600;
   background: transparent;
   border: 1px solid var(--global-divider-color);
@@ -642,17 +607,17 @@ footer .container {
   }
 
   .section-link {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   .news table th {
     width: 112px !important;
     padding-right: 0.75rem;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   .news table td {
-    font-size: 0.88rem;
+    font-size: 0.98rem;
   }
 
   .publications .abbr abbr.w-100 {
@@ -677,7 +642,7 @@ footer .container {
   }
 
   .section-heading-row h2 {
-    font-size: 1.48rem;
+    font-size: 1.62rem;
   }
 
   .news table,

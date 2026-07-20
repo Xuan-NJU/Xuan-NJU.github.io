@@ -1,5 +1,3 @@
-{% assign is_zh = false %}
-{% if page.lang contains 'zh' %}{% assign is_zh = true %}{% endif %}
 <div class="news">
   {% if site.news != blank %}
     {% assign news_size = site.news | size %}
@@ -12,7 +10,7 @@
       {% if is_scrollable %}
         tabindex="0"
         role="region"
-        aria-label="{% if is_zh %}最新动态{% else %}Latest news{% endif %}"
+        aria-label="Latest news"
       {% endif %}
     >
       <table class="table table-sm table-borderless">
@@ -25,17 +23,11 @@
         {% for item in news limit: news_limit %}
           <tr>
             <th scope="row" style="width: 20%">
-              <time datetime="{{ item.date | date: '%Y-%m' }}">
-                {% if is_zh %}{{ item.date | date: '%Y 年 %m 月' }}{% else %}{{ item.date | date: '%b %Y' }}{% endif %}
-              </time>
+              <time datetime="{{ item.date | date: '%Y-%m' }}">{{ item.date | date: '%b %Y' }}</time>
             </th>
             <td>
               {% if item.inline %}
-                {% if is_zh and item.content_zh %}
-                  {{ item.content_zh | markdownify | remove: '<p>' | remove: '</p>' | emojify }}
-                {% else %}
-                  {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-                {% endif %}
+                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
               {% else %}
                 <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
               {% endif %}
@@ -45,6 +37,6 @@
       </table>
     </div>
   {% else %}
-    <p>{% if is_zh %}暂无动态。{% else %}No news so far...{% endif %}</p>
+    <p>No news so far...</p>
   {% endif %}
 </div>
