@@ -3,7 +3,18 @@
 <div class="news">
   {% if site.news != blank %}
     {% assign news_size = site.news | size %}
-    <div class="table-responsive" {% if include.limit and page.announcements.scrollable and news_size > 3 %}style="max-height: 60vw"{% endif %}>
+    {% assign is_scrollable = false %}
+    {% if include.limit and page.announcements.scrollable and news_size > 3 %}
+      {% assign is_scrollable = true %}
+    {% endif %}
+    <div
+      class="table-responsive{% if is_scrollable %} news-scrollable{% endif %}"
+      {% if is_scrollable %}
+        tabindex="0"
+        role="region"
+        aria-label="{% if is_zh %}最新动态{% else %}Latest news{% endif %}"
+      {% endif %}
+    >
       <table class="table table-sm table-borderless">
         {% assign news = site.news | reverse %}
         {% if include.limit and page.announcements.limit %}
