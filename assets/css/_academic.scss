@@ -44,15 +44,18 @@ html {
 
 body {
   font-family:
-    "Inter",
-    "Noto Sans SC",
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    sans-serif;
-  font-size: 16.5px;
-  line-height: 1.72;
-  letter-spacing: -0.006em;
+    "Crimson Pro",
+    Georgia,
+    "Times New Roman",
+    "Noto Serif SC",
+    "Source Han Serif SC",
+    "Songti SC",
+    STSong,
+    SimSun,
+    serif;
+  font-size: 16px;
+  line-height: 1.55;
+  letter-spacing: normal;
   text-rendering: optimizeLegibility;
 }
 
@@ -84,6 +87,12 @@ input:focus-visible {
 
 .navbar {
   min-height: 62px;
+  font-family:
+    "Segoe UI",
+    "PingFang SC",
+    "Microsoft YaHei",
+    Arial,
+    sans-serif;
   background: color-mix(in srgb, var(--global-bg-color) 82%, transparent);
   border-bottom: 1px solid var(--global-divider-color);
   box-shadow: 0 1px 18px rgba(20, 31, 45, 0.035);
@@ -94,7 +103,7 @@ input:focus-visible {
 .navbar .navbar-brand,
 .navbar .nav-link {
   font-size: 0.91rem;
-  letter-spacing: -0.01em;
+  letter-spacing: normal;
 }
 
 .navbar .nav-link {
@@ -151,7 +160,7 @@ input:focus-visible {
   font-size: clamp(2.35rem, 5vw, 3.2rem);
   font-weight: 500;
   line-height: 1.03;
-  letter-spacing: -0.052em;
+  letter-spacing: normal;
 }
 
 .post-header:has(.desc) .post-title {
@@ -284,7 +293,7 @@ input:focus-visible {
   margin-bottom: 0.8rem;
   font-size: clamp(1.55rem, 3vw, 2.05rem);
   font-weight: 500;
-  letter-spacing: -0.035em;
+  letter-spacing: normal;
   border-bottom: 1px solid var(--global-divider-color);
 }
 
@@ -316,7 +325,7 @@ input:focus-visible {
   margin: 0;
   font-size: clamp(1.55rem, 3vw, 2.05rem);
   font-weight: 500;
-  letter-spacing: -0.035em;
+  letter-spacing: normal;
 }
 
 .section-heading-row h2 a {
@@ -348,6 +357,40 @@ input:focus-visible {
 
 .news .table-responsive {
   overflow: visible;
+}
+
+.news .table-responsive.news-scrollable {
+  max-height: 14rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-color: var(--global-text-color-light) transparent;
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+
+.news .table-responsive.news-scrollable::-webkit-scrollbar {
+  width: 0.42rem;
+}
+
+.news .table-responsive.news-scrollable::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.news .table-responsive.news-scrollable::-webkit-scrollbar-thumb {
+  background: var(--global-text-color-light);
+  border-radius: 999px;
+}
+
+.news .table-responsive.news-scrollable::-webkit-scrollbar-thumb:hover {
+  background: var(--global-theme-color);
+}
+
+.news .table-responsive.news-scrollable:focus-visible {
+  outline: 2px solid var(--global-theme-color);
+  outline-offset: 4px;
+  border-radius: 3px;
 }
 
 .news table {
@@ -418,7 +461,7 @@ input:focus-visible {
   font-size: 1.08rem;
   font-weight: 650;
   line-height: 1.45;
-  letter-spacing: -0.018em;
+  letter-spacing: normal;
 }
 
 .publications .publication-original-title {
@@ -651,5 +694,9 @@ footer .container {
 
   .news table td {
     padding-top: 0;
+  }
+
+  .news .table-responsive.news-scrollable {
+    max-height: 16rem;
   }
 }
