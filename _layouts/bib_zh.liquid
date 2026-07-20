@@ -4,7 +4,12 @@
 <div class="row">
   <div class="col col-sm-2 abbr">
     {% if entry.abbr %}
-      <abbr class="badge rounded w-100">
+      <abbr
+        class="badge rounded w-100"
+        {% if site.data.venues[entry.abbr].color %}
+          style="background-color: {{ site.data.venues[entry.abbr].color }}"
+        {% endif %}
+      >
         {% if site.data.venues[entry.abbr].url %}
           <a href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a>
         {% else %}

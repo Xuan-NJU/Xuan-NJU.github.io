@@ -14,7 +14,9 @@
         {% for item in news limit: news_limit %}
           <tr>
             <th scope="row" style="width: 20%">
-              {% if is_zh %}{{ item.date | date: '%Y-%m-%d' }}{% else %}{{ item.date | date: '%b %d, %Y' }}{% endif %}
+              <time datetime="{{ item.date | date: '%Y-%m' }}">
+                {% if is_zh %}{{ item.date | date: '%Y 年 %m 月' }}{% else %}{{ item.date | date: '%b %Y' }}{% endif %}
+              </time>
             </th>
             <td>
               {% if item.inline %}

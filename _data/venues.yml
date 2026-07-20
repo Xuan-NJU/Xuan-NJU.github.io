@@ -1,19 +1,20 @@
+# Journal badges use a muted wine tone; conference badges use academic blue.
 "TMC":
   url: https://www.computer.org/csdl/journal/tm
-  color: "#315d99"
-
-"INFOCOM":
-  url: https://infocom2026.ieee-infocom.org/
-  color: "#315d99"
-
-"SenSys":
-  url: https://sensys.acm.org/
-  color: "#315d99"
+  color: "var(--publication-journal-bg)"
 
 "ToN":
   url: https://www.computer.org/csdl/journal/nw
-  color: "#315d99"
+  color: "var(--publication-journal-bg)"
+
+"INFOCOM":
+  url: https://infocom2026.ieee-infocom.org/
+  color: "var(--publication-conference-bg)"
+
+"SenSys":
+  url: https://sensys.acm.org/
+  color: "var(--publication-conference-bg)"
 
 "IWQoS":
   url: https://iwqos2025.ieee-iwqos.org/
-  color: "#315d99"
+  color: "var(--publication-conference-bg)"
