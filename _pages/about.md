@@ -8,8 +8,9 @@ subtitle: "[Position] · [Institution]" # EDIT: position · lab · institution
 description: Academic profile, research interests, recent events, and selected publications.
 
 profile:
-  align: right
-  image: profile-placeholder.svg # EDIT: replace with your own file in assets/img/
+  align: left
+  image: chengxuan-fu.jpg
+  image_alt: Chengxuan Fu at Mount Fuji
   image_circular: false
   more_info: >
     <p>Nanjing University</p>

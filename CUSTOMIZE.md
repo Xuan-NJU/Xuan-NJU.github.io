@@ -8,12 +8,12 @@
 
 - `subtitle`：身份、实验室和学校，建议控制在一行。
 - `profile.image`：头像文件名。将照片放到 `assets/img/` 后修改这里。
-- `profile.more_info`：实验室、单位、城市、邮箱等右栏信息。
+- `profile.more_info`：实验室、单位、城市、邮箱等照片下方信息。
 - 正文前两段：建议写两段，每段 1–3 句。
 - `interest-list`：建议保留 3–5 个短语。
 
-头像推荐使用竖版 JPG/WebP，至少 800×960，文件小于 500 KB。删除或替换
-`assets/img/profile-placeholder.svg` 即可。
+照片推荐使用 4:5 竖版 JPG/WebP，至少 800×1000，文件小于 500 KB。将新照片放入
+`assets/img/`，再更新 `profile.image` 即可。
 
 ## 2. 社交与学术链接（默认隐藏）
 
