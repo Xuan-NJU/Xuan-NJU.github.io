@@ -36,8 +36,8 @@ layout: default
 
     {% if page.announcements and page.announcements.enabled %}
       <h2>
-        <a href="{% if is_zh %}{{ '/zh/news/' | relative_url }}{% else %}{{ '/news/' | relative_url }}{% endif %}" style="color: inherit">
-          {% if is_zh %}动态{% else %}news{% endif %}
+        <a href="{% if is_zh %}{{ '/zh/events/' | relative_url }}{% else %}{{ '/events/' | relative_url }}{% endif %}" style="color: inherit">
+          {% if is_zh %}动态{% else %}News{% endif %}
         </a>
       </h2>
       {% include news.liquid limit=true %}
@@ -51,7 +51,7 @@ layout: default
     {% if page.selected_papers %}
       <h2>
         <a href="{% if is_zh %}{{ '/zh/publications/' | relative_url }}{% else %}{{ '/publications/' | relative_url }}{% endif %}" style="color: inherit">
-          {% if is_zh %}代表性论文{% else %}selected publications{% endif %}
+          {% if is_zh %}代表性论文{% else %}Selected Publications{% endif %}
         </a>
       </h2>
       {% include selected_papers.liquid %}

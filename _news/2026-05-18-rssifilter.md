@@ -4,7 +4,7 @@ date: 2026-05-18
 inline: true
 related_posts: false
 content_zh: >-
-  论文《RSSIFilter：基于 RSSI 阈值的选择性 RFID 标签读取》发表于 **IEEE INFOCOM 2026**。
+  一篇论文于 2026 年被 [IEEE INFOCOM](https://infocom2026.ieee-infocom.org/) 录用。
 ---
 
-“RSSIFilter: Selective RFID Tag Reading via RSSI Thresholding” was published at **IEEE INFOCOM 2026**.
+One paper is accepted by [IEEE INFOCOM](https://infocom2026.ieee-infocom.org/) 2026.

@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
+title: Publications
 description: Peer-reviewed publications from 2024 onward, grouped by year.
 lang: en
 nav_section: publications

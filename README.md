@@ -4,7 +4,7 @@
 [al-folio v1.x](https://github.com/alshedivat/al-folio)，并参考
 [xutangzhi.github.io](https://xutangzhi.github.io/) 的克制型学术排版。
 
-网站只保留三个内容栏目：About、Publications、News，并提供完整中文镜像与
+网站只保留三个内容栏目：Home、Publications、Events，并提供完整中文镜像与
 `中文 / EN` 切换。支持跟随系统、日间、夜间三种配色，兼容移动端布局、
 BibTeX 自动排版和 GitHub Pages 自动部署。
 
@@ -18,7 +18,7 @@ BibTeX 自动排版和 GitHub Pages 自动部署。
 | GitHub、ORCID、邮箱等链接      | `_data/socials.yml`        |
 | 论文列表                       | `_bibliography/papers.bib` |
 | 论文中文译名                   | `_data/publications_zh.yml`|
-| News                           | `_news/*.md`               |
+| Events                         | `_news/*.md`               |
 
 完整填写说明见 [CUSTOMIZE.md](CUSTOMIZE.md)，上线步骤见 [DEPLOY.md](DEPLOY.md)。
 

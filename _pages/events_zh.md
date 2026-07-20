@@ -1,11 +1,11 @@
 ---
 layout: page
 title: 动态
-permalink: /zh/news/
+permalink: /zh/events/
 description: 研究进展与论文发表动态。
 lang: zh-CN
-nav_section: news
-translation: /news/
+nav_section: events
+translation: /events/
 nav: false
 ---
 

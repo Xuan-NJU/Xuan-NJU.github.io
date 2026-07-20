@@ -1,6 +1,6 @@
 ---
 layout: about
-title: 简介
+title: 首页
 permalink: /zh/
 lang: zh-CN
 nav_section: about
@@ -19,7 +19,7 @@ profile:
     <p>[your-email@example.com]</p>
 
 selected_papers: true
-social: true
+social: false
 
 announcements:
   enabled: true

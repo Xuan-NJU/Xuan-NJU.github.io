@@ -8,10 +8,8 @@ middle_name:
 last_name: Fu # EDIT: family name
 contact_note: # EDIT: optional one-line contact note
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Bilingual academic homepage of Chengxuan Fu, featuring research publications and recent news.
-footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  Bilingual academic homepage of Chengxuan Fu, featuring research publications and recent events.
+footer_text:
 keywords: Chengxuan Fu, RFID, wireless sensing, mobile computing, academic homepage
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🎓 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -176,7 +174,7 @@ collections:
   news:
     defaults:
       layout: post
-    output: true
+    output: false
 
 # -----------------------------------------------------------------------------
 # Jekyll settings

@@ -40,7 +40,7 @@
           {% if is_zh %}
             <li class="nav-item {% if page.nav_section == 'about' %}active{% endif %}">
               <a class="nav-link" href="{{ '/zh/' | relative_url }}">
-                简介{% if page.nav_section == 'about' %}<span class="sr-only">（当前页面）</span>{% endif %}
+                首页{% if page.nav_section == 'about' %}<span class="sr-only">（当前页面）</span>{% endif %}
               </a>
             </li>
             <li class="nav-item {% if page.nav_section == 'publications' %}active{% endif %}">
@@ -48,25 +48,25 @@
                 论文与出版物{% if page.nav_section == 'publications' %}<span class="sr-only">（当前页面）</span>{% endif %}
               </a>
             </li>
-            <li class="nav-item {% if page.nav_section == 'news' %}active{% endif %}">
-              <a class="nav-link" href="{{ '/zh/news/' | relative_url }}">
-                动态{% if page.nav_section == 'news' %}<span class="sr-only">（当前页面）</span>{% endif %}
+            <li class="nav-item {% if page.nav_section == 'events' %}active{% endif %}">
+              <a class="nav-link" href="{{ '/zh/events/' | relative_url }}">
+                动态{% if page.nav_section == 'events' %}<span class="sr-only">（当前页面）</span>{% endif %}
               </a>
             </li>
           {% else %}
             <li class="nav-item {% if page.nav_section == 'about' or page.permalink == '/' %}active{% endif %}">
               <a class="nav-link" href="{{ '/' | relative_url }}">
-                about{% if page.nav_section == 'about' or page.permalink == '/' %}<span class="sr-only">(current)</span>{% endif %}
+                Home{% if page.nav_section == 'about' or page.permalink == '/' %}<span class="sr-only">(current)</span>{% endif %}
               </a>
             </li>
             <li class="nav-item {% if page.nav_section == 'publications' %}active{% endif %}">
               <a class="nav-link" href="{{ '/publications/' | relative_url }}">
-                publications{% if page.nav_section == 'publications' %}<span class="sr-only">(current)</span>{% endif %}
+                Publications{% if page.nav_section == 'publications' %}<span class="sr-only">(current)</span>{% endif %}
               </a>
             </li>
-            <li class="nav-item {% if page.nav_section == 'news' %}active{% endif %}">
-              <a class="nav-link" href="{{ '/news/' | relative_url }}">
-                news{% if page.nav_section == 'news' %}<span class="sr-only">(current)</span>{% endif %}
+            <li class="nav-item {% if page.nav_section == 'events' %}active{% endif %}">
+              <a class="nav-link" href="{{ '/events/' | relative_url }}">
+                Events{% if page.nav_section == 'events' %}<span class="sr-only">(current)</span>{% endif %}
               </a>
             </li>
           {% endif %}

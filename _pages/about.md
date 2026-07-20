@@ -1,12 +1,12 @@
 ---
 layout: about
-title: about
+title: Home
 permalink: /
 lang: en
 nav_section: about
 translation: /zh/
 subtitle: "[Position] · [Institution]" # EDIT: position · lab · institution
-description: Academic profile, research interests, news, and selected publications.
+description: Academic profile, research interests, recent events, and selected publications.
 
 profile:
   align: right
@@ -18,7 +18,7 @@ profile:
     <p>chengxuan@smail.nju.edu.cn</p>
 
 selected_papers: true
-social: true
+social: false
 
 announcements:
   enabled: true
