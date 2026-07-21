@@ -11,6 +11,7 @@
 - `profile.more_info`：实验室、单位、城市、邮箱等照片下方信息。
 - 正文前两段：建议写两段，每段 1–3 句。
 - `interest-list`：建议保留 3–5 个短语。
+- `_data/awards.yml`：首页 Awards & Honors 条目；复制一条记录后修改名称、年份及可选说明或链接。
 
 照片推荐使用 4:5 竖版 JPG/WebP，至少 800×1000，文件小于 500 KB。将新照片放入
 `assets/img/`，再更新 `profile.image` 即可。
