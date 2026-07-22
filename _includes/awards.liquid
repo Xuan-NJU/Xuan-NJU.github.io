@@ -1,16 +1,14 @@
 {% assign awards = site.data.awards | sort: 'year' | reverse %}
-<div class="awards-list" role="list" aria-label="Awards and honors">
+<ul class="awards-list" aria-label="Awards and honors">
   {% for award in awards %}
-    <div class="award-item" role="listitem">
-      <div class="award-copy">
-        {% if award.url %}
-          <a class="award-title" href="{{ award.url }}">{{ award.title }}</a>
-        {% else %}
-          <span class="award-title">{{ award.title }}</span>
-        {% endif %}
-        {% if award.description %}<p class="award-description">{{ award.description }}</p>{% endif %}
-      </div>
-      {% if award.year %}<time class="award-year" datetime="{{ award.year }}">{{ award.year }}</time>{% endif %}
-    </div>
+    <li class="award-item">
+      {% if award.year %}<time class="award-year" datetime="{{ award.year }}">[{{ award.year }}]</time>{% endif %}
+      {% if award.url %}
+        <a class="award-title" href="{{ award.url }}">{{ award.title }}</a>
+      {% else %}
+        <span class="award-title">{{ award.title }}</span>
+      {% endif %}
+      {% if award.description %}<p class="award-description">{{ award.description }}</p>{% endif %}
+    </li>
   {% endfor %}
-</div>
+</ul>

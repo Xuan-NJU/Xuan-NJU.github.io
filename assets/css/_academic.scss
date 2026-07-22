@@ -128,6 +128,10 @@ input:focus-visible {
   margin-top: 2.8rem;
 }
 
+.post.about-page {
+  padding-bottom: clamp(3.5rem, 7vw, 5rem);
+}
+
 .post-header {
   margin-bottom: 2.25rem;
 }
@@ -274,27 +278,28 @@ input:focus-visible {
 }
 
 .awards-list {
-  margin-top: 0.15rem;
+  padding-left: 1.55rem;
+  margin: 0.15rem 0 0;
+  list-style: disc outside;
 }
 
 .award-item {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 1.25rem;
-  align-items: start;
-  padding: 0.95rem 0 1rem;
-  border-bottom: 1px solid var(--global-divider-color);
+  padding: 0.2rem 0;
+  color: var(--global-text-color);
+  font-size: 1.08rem;
+  line-height: 1.55;
 }
 
-.award-copy {
-  min-width: 0;
+.award-item::marker {
+  color: var(--global-text-color-light);
+  font-size: 0.78em;
 }
 
 .award-title {
   color: var(--global-text-color);
-  font-size: 1.08rem;
-  font-weight: 600;
-  line-height: 1.48;
+  font-size: inherit;
+  font-weight: 500;
+  line-height: inherit;
 }
 
 a.award-title:hover {
@@ -303,18 +308,17 @@ a.award-title:hover {
 }
 
 .award-year {
-  padding: 0.23rem 0.62rem;
-  color: var(--global-theme-color);
-  font-size: 0.84rem;
-  font-weight: 700;
-  line-height: 1.35;
-  letter-spacing: 0.04em;
-  background: var(--academic-accent-soft);
-  border-radius: 999px;
+  margin-right: 0.35rem;
+  color: var(--global-text-color);
+  font-size: inherit;
+  font-weight: 400;
+  line-height: inherit;
+  letter-spacing: 0;
+  white-space: nowrap;
 }
 
 .award-description {
-  margin: 0.28rem 0 0;
+  margin: 0.08rem 0 0.18rem;
   color: var(--global-text-color-light);
   font-size: 0.96rem;
   line-height: 1.5;
@@ -335,6 +339,10 @@ a.award-title:hover {
   margin-top: 2rem;
 }
 
+.research-interests > .micro-heading {
+  font-size: 1rem;
+}
+
 .interest-list {
   display: flex;
   flex-wrap: wrap;
@@ -347,7 +355,7 @@ a.award-title:hover {
 .interest-list li {
   padding: 0.38rem 0.72rem;
   color: var(--global-theme-color);
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   background: var(--academic-accent-soft);
   border: 1px solid color-mix(in srgb, var(--global-theme-color) 16%, transparent);
@@ -772,5 +780,14 @@ footer .container {
 
   .news .table-responsive.news-scrollable {
     max-height: 16rem;
+  }
+
+  .awards-list {
+    padding-left: 1.35rem;
+  }
+
+  .award-item {
+    font-size: 1rem;
+    line-height: 1.5;
   }
 }
