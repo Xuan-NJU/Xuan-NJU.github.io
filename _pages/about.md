@@ -27,7 +27,7 @@ latest_posts:
   enabled: false
 ---
 
-I am a second-year Ph.D. candidate at Nanjing University, supervised by Assoc. Prof. Jia Liu. Before that, I received my B.Sc degree in Kuang Yaming Honors School from Nanjing University in June 2024.
+I am a third-year Ph.D. candidate at Nanjing University, supervised by Prof. Jia Liu. Before that, I received my B.Sc degree in Kuang Yaming Honors School from Nanjing University in June 2024.
 
 My research interests include Wireless Sensing, Mobile Computing and RFID systems.
 
